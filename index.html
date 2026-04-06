@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Národní muzeum</title>
+    <meta name="description" content="Vítejte v našem muzeu. Objevujte fascinující expozice, interaktivní výstavy a unikátní artefakty.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- STICKY NAVIGACE -->
+    <header class="sticky-nav">
+        <div class="logo">🏛️ Muzeum</div>
+        <button class="hamburger-menu" id="hamburger-btn" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#exhibits">Expozice</a></li>
+                <li><a href="#countdown">Počítadlo</a></li>
+                <li><a href="#premium">Výstavy</a></li>
+                <li><a href="#reviews">Recenze</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#reservation">Rezervace</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- banner -->
+        <section id="banner">
+            <h1>Vítejte v Národním muzeu</h1>
+            <p>Objevujte kulturu, historii a tvůrčí genialitu lidstva</p>
+        </section>
+
+        <!-- countdown vystava -->
+        <section id="countdown">
+            <h2>Počítadlo do nové výstavy</h2>
+            <div id="timer">Načítání...</div>
+        </section>
+
+        <!-- prehled expozic csv) -->
+        <section id="exhibits">
+            <h2>Naše expozice</h2>
+            <div class="grid" id="exhibit-grid">
+                <p style="grid-column: 1/-1; text-align: center;">⏳ Načítání expozic...</p>
+            </div>
+        </section>
+
+        <!-- carousel vystavy specialni -->
+        <section id="premium">
+            <h2>Prémiové výstavy</h2>
+            <div class="carousel">
+                <div class="slides" id="premium-slides">
+                    <div class="slide">
+                        <img src="images/muzeum1.jpg" alt="Starověký Egypt - naše expozice">
+                        <div class="slide-content">
+                            <h3>Starověký Egypt</h3>
+                            <p>Objevujte tajemství faraónů a egyptské civilizace</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/muzeum7.jpg" alt="Výstava 2">
+                        <div class="slide-content">
+                            <h3>Středověké umění</h3>
+                            <p>Obdivujte mistrovská díla středověkých umělců</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/800x400?text=Modern+Art" alt="Výstava 3">
+                        <div class="slide-content">
+                            <h3>Moderní umění</h3>
+                            <p>Zažijte revoluci v umění 20. století</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button prev">❮</button>
+                <button class="carousel-button next">❯</button>
+            </div>
+        </section>
+
+        <!-- recenze lidi -->
+        <section id="reviews">
+            <h2>Co si o nás myslí návštěvníci</h2>
+            <div id="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Patrik Schneider</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Nádherné muzeum s úžasnýmí expozicemi! Skvělý zážitek pro celou rodinu."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Max Mogger27 Vaněk</span>
+                        <span class="review-rating">★★★★☆</span>
+                    </div>
+                    <p class="review-text">"Velmi zajímavé komentáře průvodců. Jedinou chybou bylo, že jsem neměl dost času abych všechno v klidu prošel."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Vojtěch tacekgamba Taclík</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Fascinující sbírka artefaktů. Rozhodně se vrátím s více času na prohlídku."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Šimon Carboch</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">"Nejhezčí muzeum, jaké jsem kdy viděl. Pan průvodce byl úžasný!"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- faq -->
+        <section id="faq">
+            <h2>Často kladené otázky</h2>
+            <div id="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>📅 Jaké jsou otevírací doby?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Muzeum je otevřené od pondělí do neděle od 9:00 do 18:00. Poslední vstup je v 17:30. V pondělí je zavřeno.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🎫 Jaké jsou ceny vstupenek?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Dospělí: 250 Kč | Děti (6-15): 150 Kč | Senioři: 150 Kč | Studenti se ISIC: 150 Kč | Bezplatný vstup do 6 let
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🏃 Jak dlouho trvá prohlídka?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Běžná prohlídka trvá 2-3 hodiny. Pokud si chcete všechno pečlivě prohlédnout, doporučujeme si vzít 4-5 hodin.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>📸 Mohu fotit v muzeu?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, fotografie bez blesku jsou povoleny v každé části muzea. Profesionální fotografie vyžadují povolení od vedení.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🍽️ Máte restauraci nebo kavárnu?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, v budově muzea se nachází kavárna s výběrem nápojů a lehkých občerstvení. Máme i piknikové prostory venku.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>♿ Je muzeum přístupné pro invalidy?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, muzeum je plně přístupné osobám se sníženou mobilitou. Máme výtahy, parkovací místa.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rezervace vstupenek -->
+        <section id="reservation">
+            <h2>Rezervace vstupenek</h2>
+            <form action="php/reservation.php" method="post" id="reservation-form">
+                <div class="form-group">
+                    <label for="date">📅 Datum návštěvy </label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">🕐 Čas příchodu </label>
+                    <input type="time" name="time" id="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="people">👥 Počet osob </label>
+                    <input type="number" name="people" id="people" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">🎫 Typ vstupenky </label>
+                    <select name="type" id="type" required>
+                        <option value="">-- Vyberte typ --</option>
+                        <option value="adult">Dospělý - 250 Kč</option>
+                        <option value="child">Dítě (6-15 let) - 150 Kč</option>
+                        <option value="senior">Senior / Student - 150 Kč</option>
+                        <option value="family">Rodinný balíček (2 ad. + 2 dítě) - 700 Kč</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">👤 Jméno a příjmení </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">📧 E-mail </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">📱 Telefonní číslo </label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9\s\-\+]+" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">📝 Poznámky (volitelné)</label>
+                    <textarea name="notes" id="notes" placeholder="Speciální požadavky, třídní výlet, atd..."></textarea>
+                </div>
+
+                <button type="submit">✓ Rezervovat vstupenky</button>
+            </form>
+        </section>
+
+        <!-- kontakty -->
+        <section id="contact">
+            <h2>Kontaktujte nás</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📍 Adresa</strong>
+                    <p>Václavské nám. 1700/68<br>110 00, Praha 1</p>
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Telefon</strong>
+                    <a href="tel:+420224497111">+420 224 497 111</a></br>
+                    <a href="tel:+420224497222">+420 224 497 222</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📧 E-mail</strong>
+                    <a href="mailto:info@nm.cz">info@nm.cz</a><br>
+                    <a href="mailto:rezervace@nm.cz">rezervace@nm.cz</a>
+                </div>
+                <div class="contact-item">
+                    <strong>🌐 Web</strong>
+                    <a href="https://www.nm.cz" target="_blank">www.nm.cz</a>
+                </div>
+            </div>
+
+            <h3>Najděte nás na mapě</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.9814688372156!2d14.4351!3d50.0849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f9ef5c94c3%3A0xc2e4a01f45c7a3c4!2sNational%20Museum%20in%20Prague!5e0!3m2!1sen!2scz!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Národní muzeum. Všechna práva vyhrazena.</p>
+        <p>Vytvořeno Vít Vajnar</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
