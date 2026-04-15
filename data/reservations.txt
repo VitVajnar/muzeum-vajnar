@@ -1,3 +1,0 @@
-=== LOG REZERVACÍ VSTUPENEK ===
-Formát: [Datum Čas] Jméno | Datum čas | Počet osob | Typ vstupenky | E-mail | Cena
-
