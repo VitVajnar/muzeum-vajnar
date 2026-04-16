@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Národní Muzeum Praha</title>
+    <meta name="description" content="Národní Muzeum Praha – domov více než 150 000 historických exponátů, uměleckých děl a přírodovědných sbírek. Poznejte tisíciletou historii lidstva.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- menu -->
+    <header class="sticky-nav">
+        <div class="logo">🏛️ Národní Muzeum</div>
+        <button class="hamburger-menu" id="hamburger-btn" aria-label="Otevřít menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#exhibits">Expozice</a></li>
+                <li><a href="#countdown">Nová výstava</a></li>
+                <li><a href="#premium">Galerie</a></li>
+                <li><a href="#reviews">Recenze</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#reservation">Rezervace</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <!-- baner -->
+        <section id="banner">
+            <div class="banner-content">
+                <span class="badge">Muzeum roku 2026 · Praha</span>
+                <h1>Poznejte tisíciletou historii lidstva</h1>
+                <p>Od starověkého Egypta po středověké hrady, od renesančního umění po přírodovědné sbírky. Více než 150 000 exponátů čeká na váš objev v srdci Prahy.</p>
+                <div class="hero-actions">
+                    <a href="#exhibits" class="btn">Prohlédnout expozice</a>
+                    <a href="#reservation" class="btn btn-secondary">Rezervovat vstupenku</a>
+                </div>
+                <div class="hero-highlights">
+                    <div class="highlight-card">
+                        <strong>150 000+ exponátů</strong>
+                        <span>největší sbírka v ČR</span>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>Průvodcované prohlídky</strong>
+                        <span>pro školy, skupiny i rodiny</span>
+                    </div>
+                    <div class="highlight-card">
+                        <strong>Plný bezbariérový přístup</strong>
+                        <span>výtahy, rampy, audio průvodce</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROČ NÁS NAVŠTÍVIT -->
+        <section id="why-visit" class="feature-grid">
+            <h2>Proč navštívit právě nás</h2>
+            <div class="feature-grid-cards">
+                <article class="feature-card">
+                    <h3>Světové sbírky</h3>
+                    <p>Naše kolekce zahrnuje exponáty z celého světa – od egyptských mumií přes řecké sochy až po středověké zbroje. Každý předmět vypráví svůj příběh.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Živé programy</h3>
+                    <p>Komentované prohlídky, interaktivní workshopy pro děti, přednášky odborníků a školní vzdělávací programy po celý rok.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Komfort pro všechny</h3>
+                    <p>Muzejní kavárna, dárkový obchod, šatna, bezplatné wifi a bezbariérový přístup. Pohodlné prostředí pro celé rodiny i jednotlivce.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ODPOČET DO NOVÉ VÝSTAVY -->
+        <section id="countdown">
+            <h2>Odpočet do zahájení výstavy</h2>
+            <p style="color:rgba(255,255,255,0.85);font-size:14px;margin-top:-8px;">Velká výstava „Středověká Evropa" otevírá 1. června 2026</p>
+            <div id="timer">Načítání...</div>
+        </section>
+
+        <!-- EXPOZICE (ze CSV) -->
+        <section id="exhibits">
+            <h2>Naše expozice</h2>
+            <div class="grid" id="exhibit-grid">
+                <p class="grid-loading">⏳ Načítání expozic...</p>
+            </div>
+        </section>
+
+        <!-- CAROUSEL – PRÉMIOVÉ VÝSTAVY -->
+        <section id="premium">
+            <h2>Výběrové výstavy</h2>
+            <div class="carousel-wrapper">
+                <button class="carousel-button prev" aria-label="Předchozí"><span>❮</span></button>
+                <div class="carousel">
+                    <div class="slides" id="premium-slides">
+                        <div class="slide">
+                            <img src="images/muzeum1.jpg" alt="Starověký Egypt">
+                            <div class="slide-content">
+                                <h3>Starověký Egypt</h3>
+                                <p>Hrobky faraónů, hieroglyfy a mistrovství starověké civilizace</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/muzeum5.jpg" alt="Renesanční malířství">
+                            <div class="slide-content">
+                                <h3>Renesanční malířství</h3>
+                                <p>Mistrovská díla italských a evropských mistrů 15.–17. století</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/muzeum3.jpg" alt="Středověké zbroje a zbraně">
+                            <div class="slide-content">
+                                <h3>Středověké zbroje a zbraně</h3>
+                                <p>Fascinující sbírka rytířských brnění a zbraní z doby Karla IV.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <button class="carousel-button next" aria-label="Následující"><span>❯</span></button>
+            </div>
+        </section>
+
+        <!-- RECENZE -->
+        <section id="reviews">
+            <h2>Co říkají naši návštěvníci</h2>
+            <div id="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Patrik Schneider</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">„Nádherné muzeum s úžasnými expozicemi. Oddíl starověkého Egypta byl naprosto fascinující – skvělý výlet pro celou rodinu."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Neviiiim</span>
+                        <span class="review-rating">★★★★☆</span>
+                    </div>
+                    <p class="review-text">„Velmi zajímavé komentáře průvodců. Jedinou chybou bylo, že jsem neměl dost času projít si vše v klidu – příliš mnoho k vidění na jeden den!"</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Vojtěch Taclík</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">„Fascinující sbírka středověkých zbraní a brnění. Průvodce byl nadšený a jeho výklad byl skvělý. Určitě se vrátím."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-author">Šimon Carboch</span>
+                        <span class="review-rating">★★★★★</span>
+                    </div>
+                    <p class="review-text">„Nejlepší muzeum, které jsem kdy navštívil. Přišel jsem s dětmi a strávili jsme zde celé odpoledne. Dětem se líbily interaktivní části."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <h2>Časté otázky</h2>
+            <div id="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>📅 Jaké jsou otevírací doby?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Muzeum je otevřeno úterý – neděle od 9:00 do 18:00 (pokladna zavírá v 17:30). V pondělí a ve státní svátky je zavřeno.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🎫 Jaké jsou ceny vstupenek?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Dospělí: 250 Kč · Děti (6–15 let): 150 Kč · Senioři / Studenti se ISIC: 150 Kč · Rodinné vstupné (2 dospělí + 2 děti): 700 Kč · Děti do 6 let: zdarma
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🏃 Jak dlouho trvá prohlídka?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Standardní prohlídka trvá přibližně 2–3 hodiny. Pokud chcete muzeum prozkoumat důkladně, doporučujeme si vyhradit 4–5 hodin.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>📸 Mohu fotit v muzeu?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, amatérské fotografování bez blesku je povoleno ve všech prostorách muzea. Komerční focení a natáčení vyžaduje předchozí souhlas vedení.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>🍽️ Máte restauraci nebo kavárnu?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, v přízemí muzea se nachází muzejní kavárna s teplými nápoji, domácími dorty a lehkým občerstvením. V letních měsících je otevřena i terasa.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>♿ Je muzeum bezbariérové?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Ano, celé muzeum je plně bezbariérové. Jsou k dispozici výtahy, bezbariérové toalety, parkovací místa pro ZTP a audio průvodce pro slabozraké.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REZERVACE -->
+        <section id="reservation">
+            <h2>Rezervace vstupenek</h2>
+            <form action="php/reservation.php" method="post" id="reservation-form">
+                <div class="form-group">
+                    <label for="date">📅 Datum návštěvy</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">🕐 Čas příchodu</label>
+                    <input type="time" name="time" id="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="people">👥 Počet osob</label>
+                    <input type="number" name="people" id="people" min="1" max="30" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">🎫 Typ vstupenky</label>
+                    <select name="type" id="type" required>
+                        <option value="">-- Vyberte typ --</option>
+                        <option value="adult">Dospělý – 250 Kč</option>
+                        <option value="child">Dítě (6–15 let) – 150 Kč</option>
+                        <option value="senior">Senior / Student ISIC – 150 Kč</option>
+                        <option value="family">Rodinné vstupné (2 dospělí + 2 děti) – 700 Kč</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">👤 Jméno a příjmení</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">📧 E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">📱 Telefonní číslo</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9\s\-\+]+" required>
+                </div>
+                <div class="form-group">
+                    <label for="notes">📝 Poznámky (volitelné)</label>
+                    <textarea name="notes" id="notes" placeholder="Školní výlet, speciální požadavky, audio průvodce..."></textarea>
+                </div>
+                <button type="submit">✓ Rezervovat vstupenky</button>
+            </form>
+        </section>
+
+        <!-- KONTAKT -->
+        <section id="contact">
+            <h2>Kontaktujte nás</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📍 Adresa</strong>
+                    <p>Václavské náměstí 68<br>110 00, Praha 1</p>
+                </div>
+                <div class="contact-item">
+                    <strong>📞 Telefon</strong>
+                    <a href="tel:+420224497111">+420 224 497 111</a><br>
+                    <a href="tel:+420224497222">+420 224 497 222</a>
+                </div>
+                <div class="contact-item">
+                    <strong>📧 E-mail</strong>
+                    <a href="mailto:info@nm.cz">info@nm.cz</a><br>
+                    <a href="mailto:rezervace@nm.cz">rezervace@nm.cz</a>
+                </div>
+            </div>
+
+            <h3>Najděte nás na mapě</h3>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.4!2d14.4309!3d50.0793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f7e2a9b1a1%3A0x0!2zTsOhcm9kbsOtIG11emV1bSBQcmFoYQ!5e0!3m2!1scs!2scz!4v1234567890"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa – Národní Muzeum Praha">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Národní Muzeum Praha. Všechna práva vyhrazena.</p>
+        <p>Vytvořeno s péčí o českou historii a kulturu.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
