@@ -1,0 +1,7 @@
+rezervace vstupenek log
+Formát: [Datum Čas] Jméno | Datum čas | Počet osob | Typ vstupenky | E-mail | Cena
+
+2026-05-04 21:34:18 | Vít Vajnar | 2026-05-27 17:34 | 1 osob | senior | vajnarvit@gmail.com | 150 Kč
+2026-05-04 21:35:21 | Vít Vajnar | 2026-05-26 17:35 | 1 osob | senior | vajnarvit@gmail.com | 150 Kč
+2026-05-09 20:57:42 | Vít Vajnar | 2026-05-20 06:57 | 1 osob | child | vajnarvit@gmail.com | 150 Kč
+2026-05-11 18:16:02 | Vít Vajnar | 2026-05-12 14:15 | 1 osob | senior | vajnarvit@gmail.com | 150 Kč
